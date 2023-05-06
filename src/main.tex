@@ -121,8 +121,6 @@
 % \setbeamertemplate{footline} % Uncomment this line to remove the footer line in all slides
 %\setbeamertemplate{footline}[page number] % Uncomment this line to replace the footer line in all slides with a simple slide count
 
-
-
 % \setbeamertemplate{navigation symbols}{} % Uncomment this line to remove the navigation symbols from the bottom of all slides
 
 % manual override to display all the content on the footer
@@ -170,8 +168,10 @@
 \setbeamertemplate{headline}{}
 \begin{frame}
 	\titlepage % Output the title slide, automatically created using the text entered in the PRESENTATION INFORMATION block above
+	% \vspace{\baselineskip}
 \end{frame}
 }
+
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS SLIDE
 %----------------------------------------------------------------------------------------
@@ -189,96 +189,48 @@
 %	PRESENTATION BODY SLIDES
 %----------------------------------------------------------------------------------------
 
-\section{Nuclear Deformation}
+\section{Aim and Motivation}
+
+\begin{frame}
+	\frametitle{Aim and Motivation}
+	\begin{block}{Triaxiality}
+		\textbf{Nuclear Triaxiality} has become a \emph{hot topic} within the scientific community.
+		\begin{itemize}
+			\item Identifying nuclei with triaxial deformations represents a real \textbf{experimental} and \textbf{theoretical} challenge
+			\item Experimental side: large setups, complex electronics, 
+			\item Theoretical side: cumbersome models, approximations, abstractions...
+		\end{itemize}
+	\end{block}
+\end{frame}
 
 
 \begin{frame}
-	\frametitle{Multiple Columns}
-	\framesubtitle{Subtitle} % Optional subtitle
-	
-	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-		\begin{column}{0.45\textwidth} % Left column width
-			\textbf{Heading}
-			\begin{enumerate}
-				\item Statement
-				\item Explanation
-				\item Example
-			\end{enumerate}
-		\end{column}
-		\begin{column}{0.5\textwidth} % Right column width
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-		\end{column}
+	\frametitle{Nuclear facilities}
+	\begin{columns}
+		\column{0.5\textwidth}
+		\begin{figure}
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/gsfig.jpg}
+		\caption{Image 3}
+		% \vspace*{\fill}
+		% \includegraphics[width=0.9\textwidth]{figures/facility.pdf}
+		% \caption{Image 1}
+	\end{figure}
+	\column{0.5\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{figures/ISOLDE-experimental-hall.jpg}
+		\caption{Image 2}
+		\end{figure}
 	\end{columns}
 \end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-	\frametitle{Table}
-	\framesubtitle{Subtitle} % Optional subtitle
-	
-	\begin{table}
-		\begin{tabular}{l l l}
-			\toprule
-			\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-			\midrule
-			Treatment 1 & 0.0003262 & 0.562 \\
-			Treatment 2 & 0.0015681 & 0.910 \\
-			Treatment 3 & 0.0009271 & 0.296 \\
-			\bottomrule
-		\end{tabular}
-		\caption{Table caption}
-	\end{table}
-\end{frame}
-
-
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-	\frametitle{Verbatim}
-	
-	\begin{example}[Theorem Slide Code]
-		\begin{verbatim}
-			\begin{frame}
-				\frametitle{Theorem}
-				\begin{theorem}[Mass--energy equivalence]
-					$E = mc^2$
-				\end{theorem}
-		\end{frame}\end{verbatim} % Must be on the same line
-	\end{example}
-\end{frame}
+		
+\section{Nuclear Deformation}
 
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGMENTS SLIDE
 %----------------------------------------------------------------------------------------
-
-\begin{frame}
-	\frametitle{Acknowledgements}
-	
-	\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-		\begin{column}{0.45\textwidth} % Left column width
-			\textbf{Smith Lab}
-			\begin{itemize}
-				\item Alice Smith
-				\item Devon Brown
-			\end{itemize}
-			\textbf{Cook Lab}
-			\begin{itemize}
-				\item Margaret
-				\item Jennifer
-				\item Yuan
-			\end{itemize}
-		\end{column}		
-		\begin{column}{0.5\textwidth} % Right column width
-			\textbf{Funding}
-			\begin{itemize}
-				\item British Royal Navy
-				\item Norwegian Government
-			\end{itemize}
-		\end{column}
-	\end{columns}
-\end{frame}
-
 
 %----------------------------------------------------------------------------------------
 %	CLOSING SLIDE
@@ -288,12 +240,8 @@
 	\begin{center}
 		\bigskip\bigskip % Vertical whitespace
 		{\Huge Thank you for your attention !}
-		
-		
 	\end{center}
 \end{frame}
-
-
 
 %----------------------------------------------------------------------------------------
 
