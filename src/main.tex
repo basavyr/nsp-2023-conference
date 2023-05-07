@@ -84,7 +84,9 @@
 % \usepackage{mathptmx} % Use the Times font for serif text
 % \usepackage{palatino} % Use the Palatino font for serif text
 \usepackage{fontawesome}
-
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{graphicx}
 % \usepackage{helvet} % Use the Helvetica font for sans serif text
 % \usepackage[default]{opensans} % Use the Open Sans font for sans serif text
 % \usepackage[default]{FiraSans} % Use the Fira Sans font for sans serif text
@@ -270,10 +272,59 @@
 		
 \section{Nuclear Deformation}
 
+\begin{frame}
+	\frametitle{Nuclear Shapes (in the context of WM)}
+	\begin{exampleblock}{Nuclear Radius}
+		The \textbf{shape} of the nucleus is most generally described in terms of the \emph{nuclear radius}:
+		\begin{align}
+			R(\theta,\varphi;t)=R_0\left(1+\sum_{\lambda=0}^{^\infty}\sum_{\mu=-\lambda}^\lambda\alpha_{\lambda\mu}(t)Y_\lambda^\mu(\theta,\varphi)\right)
+		\end{align}
+	\end{exampleblock}
+	% \begin{itemize}
+	% 	\item The $\alpha_{\lambda\mu}$ are collective coordinates $\Longrightarrow$ \emph{vibrations of the nucleus}.
+	% 	\item $Y_\lambda^\mu$ are the spherical harmonics.
+	% \end{itemize}
+	\begin{block}{Quadrupole radius - pure quadrupole deformations}
 
-%----------------------------------------------------------------------------------------
-%	ACKNOWLEDGMENTS SLIDE
-%----------------------------------------------------------------------------------------
+		\begin{itemize}
+			\item Most relevant modes are the \textbf{quadrupole vibrations} $\lambda=2$ $\Longrightarrow$ \emph{Play a crucial role in the rotational spectra of nuclei}
+		\end{itemize}
+		\begin{align}
+			R(\theta,\varphi)=R_0\left(1+\sum_\mu\alpha_{2\mu}Y_2^\mu(\theta,\varphi)\right)\ ,
+		\end{align}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Nuclear Shapes II}
+	\begin{block}{Collective coordinates}
+		\begin{itemize}
+			\item Most of the nuclei are either \textbf{spherical} or \textbf{axially symmetric} in their ground-state.
+			\item Coordinates $\alpha_{2\mu}$ can be reduced to only two \emph{deformation parameters}: $\beta_2$ (\emph{eccentricity}) and $\gamma$ (\textbf{triaxiality}).
+		\end{itemize}
+	\end{block}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.38]{figures/nuclear_shapes.png}
+		\caption{\textbf{spherical:} $\beta_2=0$\ \textbf{prolate:} $\beta_2>0$\ \textbf{oblate:} $\beta_2<0$}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Nuclear Shapes III}
+	\begin{alertblock}{Non-axial shapes}
+		\begin{itemize}
+			\item Deviations from symmetric shapes can occur across the chart of nuclides $\to$ \textbf{triaxial nuclei}.
+			\item The triaxiality parameter $\gamma$ (\textit{Bohr, 1969}): departure from axial symmetry
+		\end{itemize}
+	\end{alertblock}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.42]{figures/nice_diagram.pdf}
+		\includegraphics[scale=0.19]{figures/triaxial-shape.pdf}
+	\end{figure}
+\end{frame}
 
 %----------------------------------------------------------------------------------------
 %	CLOSING SLIDE
