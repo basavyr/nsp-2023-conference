@@ -454,9 +454,57 @@
 
 \begin{frame}
 	\frametitle{Excitation energies}
+	\begin{block}{Energy scheme}
+		\begin{itemize}
+			\item From the equations of motion and the two solutions for $\Omega$, the spectrum becomes:
+			\begin{align}
+				E_I^\text{TSD1}=&\epsilon_{j}+\mathcal{H}_\text{min}^{(I,j)}+\mathcal{F}_{00}^{I},\ I=R+j,\ R=0,2,4,\dots\nonumber\\
+				E_I^\text{TSD2}=&\epsilon_{j_1}+\mathcal{H}_\text{min}^{(I,j)}+\mathcal{F}_{00}^{I},\ I=R+j,\ R=0,2,4,\dots\nonumber\\
+				E_I^\text{TSD3}=&\epsilon_{j}+\mathcal{H}_\text{min}^{(I-1,j)}+\mathcal{F}_{10}^{I-1},\ \text{one-phonon wobbling band}\nonumber\\
+				E_I^\text{TSD4}=&\epsilon_{j_2}+\mathcal{H}_\text{min}^{(I,j)}+\mathcal{F}_{00}^{I},\ I=R+j,\ R=0,2,4,\dots
+			\end{align}
+			\item Phonon term (contains the wobbling frequencies $\Omega$, R. Poenaru, IJMPE 2021):
+			\begin{align}
+				\mathcal{F}_{n_{w_1}n_{w_2}}^{I}=\Omega_1^I\left(n_{w_1}+\frac{1}{2}\right)+\Omega_2^I\left(n_{w_2}+\frac{1}{2}\right)
+			\end{align}
+		\end{itemize}
+	\end{block}
+\end{frame}
 
+\begin{frame}
+	\frametitle{Schematic representation of the new picture}
+	\vspace{-0.3cm}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.45]{figures/W2_Approach.pdf}
+	\end{figure}
+\end{frame}
 	
+\subsection{Results}
 
+\begin{frame}
+	\frametitle{Results}
+	\begin{exampleblock}{Fitting method}
+		Apply fitting on a model with four free parameters: 3 moments of inertia $\mathcal{I}_{1,2,3}$, and the single-particle potential strength $V$.
+		\vspace{-0.2cm}
+		\begin{align}
+			\chi^2=\frac{1}{N_T}\sum_i\frac{\left(E_\text{exp}^{(i)}-E_\text{th}^{(i)}\right)}{E_\text{exp}^{(i)}}
+		\end{align}
+		\vspace{-1cm}
+		\begin{table}
+			\caption{The obtained parameter set:}
+			\centering
+				\begin{tabular}{lllll}
+					\hline
+					$\mathcal{I}_1$ $\left[\hbar^2/\text{MeV}\right]$ & $\mathcal{I}_2$ $\left[\hbar^2/\text{MeV}\right]$ & $\mathcal{I}_3$ $\left[\hbar^2/\text{MeV}\right]$ & $\gamma$ [deg. ] & $V$ [\text{MeV}] \\
+					\hline
+					\hline
+					72              & 15              & 7               & 22       & 2.1\\
+					\hline
+				\end{tabular}
+			\end{table}
+	\end{exampleblock}
+	\textbf{Full work published in three papers: one in IJMPE 2021, two in RJP 2021.}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
